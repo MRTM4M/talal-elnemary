@@ -145,7 +145,7 @@ header nav ul li a:hover::after {
 
 .toggle-menu {
     display: none;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: var(--main-color);
     cursor: pointer;
     transition: var(--transition-duration) ease-in-out;
@@ -154,7 +154,7 @@ header nav ul li a:hover::after {
     color: var(--secondary-text);
 }
 /* ===== Mobile ===== */
-@media (max-width: 768px) {
+@media (max-width: 922px) {
     .toggle-menu {
         display: block;
     }
@@ -213,6 +213,9 @@ header nav ul li a:hover::after {
     header nav ul li a:hover {
         padding-left: 8px;
         color: var(--main-color);
+    }
+    header .logo {
+        font-size: 1.4rem;
     }
 }
 
