@@ -58,16 +58,7 @@ header {
     padding: 10px 0;
 }
 
-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 85%;
-    background: rgba(255,255,255,0.15);
-    backdrop-filter: blur(5px);
-    border-radius: 15px;
-    padding: 15px 20px;
-}
+
 header .container {
     display: flex;
     justify-content: space-between;
@@ -85,7 +76,15 @@ header .container {
         0 4px 15px rgba(0, 0, 0, 0.3); 
     transition: all 0.3s ease;
 }
+@media (max-width: 767px) {
+    header .container {
+        width: 95%;
+        padding: 10px;
+        gap: 10px;
+        border-radius: 10px;
 
+    }
+}
 header .container:hover {
     background: rgba(0, 0, 0, 0.25);
     box-shadow: 
@@ -102,18 +101,21 @@ header .logo div {
     font-weight: 800;
     letter-spacing: 2px;
     color: var(--main-color);
-    text-shadow: 0 0 10px rgba(216, 174, 24, 0.685);
+    text-shadow: 0 0 3px rgba(206, 172, 52, 0.685);
 }
 
-header nav ul {
+header .nav-links {
+
+    position: absolute;
+    top: 20px;
+    right: 12%;
     display: flex;
     gap: 25px;
-    position: relative;
     
 }
 
 
-header nav ul li a {
+header  .nav-links li a {
     position: relative;
     font-size: 1.3rem;
     color: var(--main-color);
@@ -124,22 +126,22 @@ header nav ul li a {
 }
 
 
-header nav ul li a::after {
+header .nav-links li a::after {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -6px;
+    bottom: 0px;
     width: 0;
     height: 2px;
     background: var(--main-color);
     transition: 0.3s ease;
 }
 
-header nav ul li a:hover {
+header .nav-links li a:hover {
     color: var(--secondary-text);
 }
 
-header nav ul li a:hover::after {
+header .nav-links li a:hover::after {
     width: 100%;
 }
 
@@ -154,25 +156,23 @@ header nav ul li a:hover::after {
     color: var(--secondary-text);
 }
 /* ===== Mobile ===== */
+
 @media (max-width: 922px) {
     .toggle-menu {
         display: block;
     }
-    header nav{
-        z-index: 20;
-    }
-    header nav ul {
-        position: absolute;
-        top: calc(100% + 15px); 
-        right: 0; 
+
+    header .nav-links {
+        top: 75px; 
+        right: 7.5%; 
         flex-direction: column;
-        width: 220px;
-        padding: 25px;
+        width: 150px;
+        padding: 15px 10px;
         border-radius: 15px;
 
         background: rgba(0, 0, 0, 0.3); 
-        backdrop-filter: blur(15px);
-        -webkit-backdrop-filter: blur(15px);
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
 
         border: 1px solid rgba(255, 255, 255, 0.1); 
         box-shadow: 
@@ -182,35 +182,43 @@ header nav ul li a:hover::after {
         opacity: 0;
         transform: translateY(10px);
         pointer-events: none;
-        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+            transform 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+            background 0.3s ease, 
+            box-shadow 0.3s ease;
+        
         z-index: 10;
     }
 
-    header nav ul.show-menu {
+    header .nav-links.show-menu {
         opacity: 1;
         transform: translateY(0);
         pointer-events: auto;
     }
-
-    header nav ul li {
-        margin-bottom: 20px;
+    header .nav-links:hover {
+        background: rgba(0, 0, 0, 0.25);
+        box-shadow: 
+        inset 6px 6px 12px rgba(0, 0, 0, 0.6), 
+        inset -1px -1px 5px rgba(255, 255, 255, 0.1);
+    }
+    header .nav-links li {
+        margin-bottom: 10px;
         width: 100%;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* خطوط فاصلة وهمية */
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     }
 
-    header nav ul li:last-child {
+    header .nav-links li:last-child {
         margin-bottom: 0;
         border-bottom: none;
     }
 
-    header nav ul li a {
-        font-size: 1.1rem;
-        padding: 10px 0;
+    header .nav-links li a {
+        font-size: 0.97rem;
         display: block;
         color: var(--secondary-text);
     }
 
-    header nav ul li a:hover {
+    header .nav-links li a:hover {
         padding-left: 8px;
         color: var(--main-color);
     }
@@ -218,7 +226,11 @@ header nav ul li a:hover::after {
         font-size: 1.4rem;
     }
 }
-
+@media (max-width: 768px){
+    header .nav-links {
+        right: 3.5%;
+    }
+}
 .landing{
     background-image: url(../resources/landing.png);
     height: 100vh;
@@ -309,7 +321,7 @@ header nav ul li a:hover::after {
 
 .cta-btn {
     display: inline-block;
-    padding: 12px 28px;
+    padding: 12px 25px;
     background: var(--main-color);
     color: #000;
     font-weight: 600;
@@ -343,9 +355,17 @@ header nav ul li a:hover::after {
 
 /* Tablets */
 @media (max-width: 992px) {
-
+    .landing .overlay .container{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .landing .overlay .text {
+        justify-content: center;
+    }
     .main-title {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
+        margin-bottom: 10px;
     }
 
     .sub-title {
@@ -354,6 +374,7 @@ header nav ul li a:hover::after {
 
     .description {
         font-size: 1rem;
+        max-width: 320px;
     }
 
 }
@@ -361,11 +382,7 @@ header nav ul li a:hover::after {
 /* Mobile */
 @media (max-width: 768px) {
 
-    .landing .overlay .container{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    }
+
 
     .landing .overlay .text {
         padding: 0 20px;
@@ -376,8 +393,9 @@ header nav ul li a:hover::after {
     }
 
     .main-title {
-        font-size: 2.2rem;
+        font-size: 2rem;
         letter-spacing: 1px;
+        margin-bottom: 10px;
     }
 
     .sub-title {
@@ -389,7 +407,7 @@ header nav ul li a:hover::after {
     }
 
     .cta-btn {
-        padding: 14px;
+        padding: 10px;
     }
 
 }
@@ -398,7 +416,9 @@ header nav ul li a:hover::after {
 @media (max-width: 480px) {
 
     .main-title {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+
     }
 
     .sub-title {

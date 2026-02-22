@@ -1,14 +1,14 @@
 
 // for clicking the hambargur menu
 const toggleMenu = document.querySelector('.toggle-menu');
-const menu = document.querySelector('header nav ul');
+const menu = document.querySelector('header .nav-links');
 
 toggleMenu.addEventListener('click', (e) => {
     e.stopPropagation(); 
     menu.classList.toggle('show-menu');
 });
 
-document.querySelectorAll('header nav ul li a').forEach(link => {
+document.querySelectorAll('header .nav-links li a').forEach(link => {
     link.addEventListener('click', () => menu.classList.remove('show-menu'));
 });
 
