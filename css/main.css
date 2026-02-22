@@ -358,10 +358,15 @@ header .nav-links li a:hover::after {
     .landing .overlay .container{
         display: flex;
         justify-content: center;
-        text-align: center;
+        align-items: center;
+    }
+    .landing .overlay .text-content {
+        
     }
     .landing .overlay .text {
         justify-content: center;
+        align-items: center;
+        text-align: center;
     }
     .main-title {
         font-size: 2.5rem;
@@ -375,6 +380,8 @@ header .nav-links li a:hover::after {
     .description {
         font-size: 1rem;
         max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 }
