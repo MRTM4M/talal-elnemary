@@ -164,7 +164,7 @@ header .nav-links li a:hover::after {
 
     header .nav-links {
         top: 75px; 
-        right: 7.5%; 
+        right: 3.5%; 
         flex-direction: column;
         width: 150px;
         padding: 15px 10px;
@@ -226,11 +226,11 @@ header .nav-links li a:hover::after {
         font-size: 1.4rem;
     }
 }
-@media (max-width: 768px){
+/* @media (max-width: 768px){
     header .nav-links {
         right: 3.5%;
     }
-}
+} */
 .landing{
     background-image: url(../resources/landing.png);
     height: 100vh;
@@ -359,9 +359,6 @@ header .nav-links li a:hover::after {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    .landing .overlay .text-content {
-        
     }
     .landing .overlay .text {
         justify-content: center;
