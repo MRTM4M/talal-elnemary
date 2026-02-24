@@ -533,7 +533,7 @@ header .nav-links li a:hover::after {
 .service{
     padding: var(--section-spacing) 0px;
     background: 
-        radial-gradient(circle at 25% 50%, var(--color-gold-soft), #00000005 40%),
+        radial-gradient(circle at 25% 50%, var(--color-gold-soft), #00000030 40%),
         var(--color-bg-main);
 }
 .service .container{
