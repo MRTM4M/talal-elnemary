@@ -46,6 +46,9 @@ function initNavbar() {
             menu.classList.remove('show-menu');
         }
     });
+    window.addEventListener("scroll", () => {
+        menu.classList.remove("show-menu");
+    });
 }
 function hoveredNav(){
     const headerNav = document.querySelector("header .nav-links");
@@ -154,10 +157,26 @@ function galleryAppear(){
     }
 }
 
+function toggledCard(){
+    const galleryCards = document.querySelectorAll(".gallery-card")
+
+    galleryCards.forEach(card => {
+        card.addEventListener("click", () => {
+            galleryCards.forEach(c => c.classList.remove("active-card"));
+            card.classList.toggle("active-card");
+        });
+    });
+
+    window.addEventListener("scroll", () => {
+        galleryCards.forEach(card => card.classList.remove("active-card"));
+    });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     initNavbar();
     initServiceCards();
     init3DEffect();
     hoveredNav();
     galleryAppear();
+    toggledCard();
 });
