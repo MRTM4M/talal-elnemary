@@ -651,3 +651,87 @@ header .nav-links li a:hover::after {
 .gallery{
     padding: var(--section-spacing) 0px;
 }
+
+/* Masonry Layout */
+.gallery .container{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+}
+
+@media (max-width: 991px) {
+    .gallery .container{
+        grid-template-columns: repeat(2 , 1fr);
+        grid-template-rows: repeat(auto-fit , 1fr);
+    }
+
+    .gallery-card {
+        transition: opacity 0.4s ease,
+        transform 0.4s ease;
+    }
+
+    .gallery-card.hide-card {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    .gallery-card.hidden {
+        display: none;
+    }
+
+    .gallery-toggle {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .gallery .container{
+        grid-template-columns: 1fr ;
+        grid-template-rows: repeat(auto-fit , 1fr);
+        justify-content: center;
+        align-items: center;
+    }
+}
+.gallery-card {
+    overflow: hidden;
+    border-radius: 14px;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+@media (min-width: 992px){
+
+    .gallery-card:nth-of-type(1){
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .gallery-card:nth-of-type(6){
+        grid-row: span 2;
+    }
+    /* .gallery-card:nth-of-type(6) img{
+        height: 100%;
+        object-fit: cover;
+    } */
+    .gallery-card:nth-of-type(6) img {
+        object-position: 80% center;
+    }
+    .gallery-toggle {
+        display: none;
+    }
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform var(--transition-main);
+}
+
+.gallery-card:hover img {
+    transform: scale(1.05);
+}
+

@@ -105,9 +105,59 @@ function initServiceCards() {
         setTimeout(clearActive, 50);
     });
 }
+
+function galleryAppear(){
+    const gallery = document.querySelector(".gallery");
+    const btn = document.querySelector(".gallery-btn");
+    const hiddenCards = document.querySelectorAll(".gallery-card:nth-last-child(-n+4)");
+
+    if (gallery && btn) {
+
+        if (window.innerWidth <= 991) {
+            hiddenCards.forEach(card => {
+                card.classList.add("hidden", "hide-card");
+            });
+        }
+
+        btn.addEventListener("click", () => {
+
+            const expanded = gallery.classList.toggle("expanded");
+
+            if (expanded) {
+
+                hiddenCards.forEach((card, index) => {
+                    card.classList.remove("hidden");
+
+                    setTimeout(() => {
+                        card.classList.remove("hide-card");
+                    }, index * 80);
+                });
+
+                btn.textContent = "See Less";
+
+            } else {
+
+                hiddenCards.forEach((card, index) => {
+                    setTimeout(() => {
+                        card.classList.add("hide-card");
+
+                        setTimeout(() => {
+                            card.classList.add("hidden");
+                        }, 400);
+
+                    }, index * 60);
+                });
+
+                btn.textContent = "See More";
+            }
+        });
+    }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     initNavbar();
     initServiceCards();
     init3DEffect();
     hoveredNav();
+    galleryAppear();
 });
