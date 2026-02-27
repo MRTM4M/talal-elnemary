@@ -80,6 +80,7 @@ body {
     text-align: center;
     color: var(--color-text-main);
     position: relative;
+    margin-bottom: calc(var(--section-spacing) - 20px);
 }
 .main-head::after{
     content: "";
@@ -125,7 +126,14 @@ body {
     margin-bottom: 70px;
     color: var(--color-text-muted);
 }
-
+@media (max-width:768px){
+    .main-head .main-title{
+        font-size: 2rem;
+    }
+    .main-head .description{
+        font-size: 1rem;
+    }
+}
 
 /* ===== NAVBAR BASE ===== */
 
