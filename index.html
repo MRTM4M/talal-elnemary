@@ -22,14 +22,14 @@
             </div>
             <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">Gallery</a></li>
-                    <li><a href="#projects">About Us</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#contact">Contact</a></li>
             </ul>
         </header>
         <!-- end of header -->
-        <section class="landing">
+        <section class="landing" id="home">
             <div class="overlay">
                 <div class="container">
                     <div class="text">
@@ -53,10 +53,52 @@
             </div>
         </section>
         <!-- end of the landing section  -->
-        
+        <!-- about us section  -->
+        <section class="aboutus" id="about">
+            <div class="main-head">
+                <div class="main-title">About <span>Us</span></div>
+                <p class="description">Explore and see the quality of our work.</p>
+            </div>
+            
+            <div class="container">
+                <div class="about-content">
+                <!-- Left: Text -->
+                <div class="about-text">
+                    <span class="about-label">Who We Are</span>
+                    <h3 class="about-heading">Crafting Excellence Since <span>1990</span></h3>
+                    <p>
+                    We've built our reputation on a foundation of trust, quality, and an unwavering commitment to our clients. Every project we undertake is a testament to our dedication to excellence.
+                    </p>
+                    <p>
+                    Our team of experts brings together years of experience, innovative techniques, and a passion for perfection to deliver outstanding results that stand the test of time.
+                    </p>
+                    <ul class="about-features">
+                        <li><i class="fas fa-check-circle"></i> Premium Quality Materials</li>
+                        <li><i class="fas fa-check-circle"></i> Expert Craftsmanship</li>
+                        <li><i class="fas fa-check-circle"></i> 100% Satisfaction Guarantee</li>
+                    </ul>
+                    <a href="#service" class="cta-btn">Our Services</a>
+                </div>
+                
+                <!-- Right: Photo -->
+                    <div class="about-image">
+                        <div class="image-wrapper">
+                            <img src="resources/workshop1.png" alt="Our Workshop" />
+                            <!-- Decorative elements -->
+                            <div class="img-decor-box"></div>
+                            <div class="img-experience-badge">
+                                <span class="num">30+</span>
+                                <span class="text">Years of<br>Excellence</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
         <!-- services section  -->
         
-        <section class="service">
+        <section class="service" id="service">
             <div class="main-head">
                 <div class="main-title">Our <span>Services</span></div>
                 <p class="description">We offer a comprehensive range of construction services to meet your needs.</p>
@@ -82,7 +124,7 @@
         <!-- services section end -->
         
         <!-- gallery section start -->
-        <section class="gallery">
+        <section class="gallery" id="gallery">
             <div class="main-head">
                 <div class="main-title">Our <span>Arts</span></div>
                 <p class="description">Explore and see the quality of our work.</p>
@@ -118,50 +160,6 @@
             </div>
         </section>
         
-        <!-- why us section  -->
-            <section class="aboutus">
-                <!-- <div class="main-head">
-                    <div class="main-title">About <span>Us</span></div>
-                    <p class="description">Explore and see the quality of our work.</p>
-                </div> -->
-                
-                <div class="about-bg">
-                    <div class="overlay">
-                        <div class="about-content container">
-                            <div class="about-text">
-                                <h3>About Our Workshop</h3>
-                                <p>
-                                    With decades of experience in automotive repair, our workshop combines skilled craftsmanship 
-                                    with modern diagnostic tools to deliver reliable service.
-                                </p>
-                                <p>
-                                    We take pride in providing fast, transparent, and high-quality repairs that keep our customers 
-                                    on the road safely.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="about-stats-caro">
-
-                            <div class="stats-group">
-
-                                <div class="stat">15+ Years Experience</div>
-                                <div class="stat">500+ Cars Repaired</div>
-                                <div class="stat">300+ Happy Clients</div>
-                                <div class="stat">24/7 Support</div>
-
-                                <div class="stat">15+ Years Experience</div>
-                                <div class="stat">500+ Cars Repaired</div>
-                                <div class="stat">300+ Happy Clients</div>
-                                <div class="stat">24/7 Support</div>
-                                
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                
-            </section>
         <!-- gallery section end -->
         
         <script src="js/main.js" defer></script>
