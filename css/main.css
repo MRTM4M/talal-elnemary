@@ -1357,7 +1357,7 @@ header .nav-links li a:hover::after {
     position: fixed;        
     bottom: 20px;           
     right: 20px;            
-    background: rgba(235, 202, 85, 0.1);  
+    background: rgba(235, 202, 85, 0.5);  
     color: var(--color-gold);            
     font-size: 2rem;        
     width: 60px;
