@@ -1068,7 +1068,6 @@ header .nav-links li a:hover::after {
 .info-item {
     display: flex;
     align-items: center;
-    gap: 15px;
     text-decoration: none;
     color: inherit;
     width: fit-content;
