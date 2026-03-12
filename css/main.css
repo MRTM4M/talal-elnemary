@@ -1229,14 +1229,17 @@ header .nav-links li a:hover::after {
     justify-content:center;
 
     color:var(--color-gold);
-    transition:.3s;
+    transition: all var(--transition-fast);
 }
-
+.footer-social i{
+    transition: all var(--transition-fast);
+}
 .footer-social a:hover{
-    background:var(--color-gold);
-    color:#000;
+    background:var(--color-gold);   
 }
-
+.footer-social a:hover i{
+    color: #000;
+}
 .footer-title{
     color:var(--color-text-muted);
     margin-bottom:20px;
