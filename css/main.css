@@ -61,8 +61,11 @@ html{
 body {
     min-height: 100vh;
     background: var(--color-bg-main);
+    font-family: 'Inter', sans-serif;
 }
-
+.head-font{
+    font-family: "Poppins", sans-serif;
+}
 .container{
     padding: 0px 15px;
     margin: 0px auto;
@@ -958,28 +961,6 @@ header .nav-links li a:hover::after {
     cursor: pointer;
     box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
-@media (min-width: 992px){
-
-    .gallery-card:nth-of-type(1){
-        grid-column: span 2;
-        grid-row: span 2;
-    }
-
-    .gallery-card:nth-of-type(6){
-        grid-row: span 2;
-    }
-    /* .gallery-card:nth-of-type(6) img{
-        height: 100%;
-        object-fit: cover;
-    } */
-    .gallery-card:nth-of-type(6) img {
-        object-position: 80% center;
-    }
-    .gallery-toggle {
-        display: none;
-    }
-}
-
 .gallery-card img {
     width: 100%;
     height: 100%;
@@ -989,9 +970,40 @@ header .nav-links li a:hover::after {
     transition: transform var(--transition-main);
 }
 
+.gallery-card video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      /* يغطي كل مساحة الكارت بدون تشويه */
+    object-position: center; /* يركّز على نص الفيديو أو حسب الحاجة */
+    display: block;
+}
+
 .gallery-card.active-card img {
     transform: scale(1.05);
 }
+@media (min-width: 992px){
+
+    .gallery-card:nth-of-type(1){
+        grid-row: span 2;
+    }
+
+    .gallery-card:nth-of-type(4){
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+    /* .gallery-card:nth-of-type(6) img{
+        height: 100%;
+        object-fit: cover;
+    } */
+    .gallery-card:nth-of-type(1) img {
+        object-position: 80% center;
+    }
+    .gallery-toggle {
+        display: none;
+    }
+}
+
+
 
 /* contact us setion  */
 
@@ -1296,22 +1308,25 @@ header .nav-links li a:hover::after {
 .made-by{
     display:flex;
     align-items:center;
+    gap:12px;
+}
+
+.made-links{
+    display:flex;
+    align-items:center;
     gap:10px;
 }
 
-.made-by a{
-    display:flex;
+.made-links a{
     align-items:center;
-    gap:6px;
-
-    text-decoration:none;
     color:var(--color-text-muted);
     transition:var(--transition-fast);
 }
 
-.made-by a:hover{
+.made-links a:hover{
     color:var(--color-gold);
 }
+
 @media(min-width:993px){
     .made-by{
         margin-right: 20px;
@@ -1319,8 +1334,11 @@ header .nav-links li a:hover::after {
     .footer-bottom p:nth-of-type(1){
         margin-left: 20px;
     }
+    /* .made-by{
+        flex-direction: column;
+    } */
+    
 }
-/* responsive */
 
 @media (max-width:992px){
 
