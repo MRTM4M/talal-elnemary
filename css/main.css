@@ -19,7 +19,7 @@
     --color-gold-soft: rgba(235, 202, 85, 0.08);
     --color-text-main: #ebe8e8;
     --color-text-muted: #d1d5db;
-    --shadow-gold: rgba(235, 202, 85, 0.5);
+    --shadow-gold: rgba(235, 202, 85, 0.7);
     /* ===== Blur ===== */
     --blur-main: 5px;
     --blur-sec: 2px;
@@ -39,6 +39,16 @@
     --transition-float: 2s ease-in-out;
     --transition-main-duration: 0.5s;
 
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:link,
+a:visited,
+a:active{
+    text-decoration: none;
+    color: #000;;
 }
 ul{
     list-style: none;
@@ -896,7 +906,7 @@ header .nav-links li a:hover::after {
 .gallery{
     padding: var(--section-spacing) 0px;
     /* margin-bottom: 30px; */
-    background: radial-gradient(circle at 25% 50%, var(--color-gold-soft), #00000030 40%);
+    background: #00000030;
 }
 
 /* Masonry Layout */
@@ -1153,6 +1163,177 @@ header .nav-links li a:hover::after {
         min-height: 350px;
     }
 }
+ /* footer */
+
+.footer{
+    background: #00000030;
+    padding:var(--section-spacing) 0px 30px;
+    position: relative;
+}
+.footer::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-gold);
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.footer-container{
+    display:flex;
+    justify-content:space-between;
+    gap:var(--main-gap);
+}
+
+.footer-col{
+    flex:1;
+}
+
+.footer-logo{
+    font-size:1.8rem;
+    color:var(--color-gold);
+    margin-bottom:20px;
+}
+
+.footer-text{
+    color:var(--color-text-muted);
+    line-height:1.7;
+    margin-bottom:25px;
+}
+
+.footer-social{
+    display:flex;
+    gap:calc(var(--main-gap) / 2);
+}
+
+.footer-social a{
+    width:40px;
+    height:40px;
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    color:var(--color-gold);
+    transition:.3s;
+}
+
+.footer-social a:hover{
+    background:var(--color-gold);
+    color:#000;
+}
+
+.footer-title{
+    color:#fff;
+    margin-bottom:20px;
+    font-size:1.2rem;
+    position:relative;
+}
+
+.footer-title::after{
+    content:"";
+    width:40px;
+    height:2px;
+    background:var(--color-gold);
+    position:absolute;
+    left:0;
+    bottom:-8px;
+}
+
+.footer-links li{
+    margin-bottom:12px;
+}
+
+.footer-links a{
+    text-decoration:none;
+    color:var(--color-text-muted);
+    transition:.3s;
+}
+
+.footer-links a:hover{
+    color:var(--color-gold);
+}
+
+.footer-contact li{
+    margin-bottom:15px;
+    color:var(--color-text-muted);
+}
+.footer a{
+    color: var(--color-text-muted);
+    transition: all var(--transition-fast);
+}
+.footer a:hover{
+    color: var(--color-gold);
+}
+.footer-contact i{
+    color:var(--color-gold);
+    margin-right:10px;
+}
+
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,0.08);
+    margin-top:40px;
+    padding-top:20px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:var(--main-gap);
+
+    color:var(--color-text-muted);
+}
+.footer-bottom p:nth-of-type(1){
+    text-align: center;
+}
+.footer-bottom span{
+    color:var(--color-gold);
+}
+
+.made-by{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.made-by a{
+    display:flex;
+    align-items:center;
+    gap:6px;
+
+    text-decoration:none;
+    color:var(--color-text-muted);
+    transition:var(--transition-fast);
+}
+
+.made-by a:hover{
+    color:var(--color-gold);
+}
+@media(min-width:993px){
+    .made-by{
+        margin-right: 20px;
+    }
+    .footer-bottom p:nth-of-type(1){
+        margin-left: 20px;
+    }
+}
+/* responsive */
+
+@media (max-width:992px){
+
+    .footer-container{
+        flex-direction:column;
+        gap:40px;
+    }
+    .footer-bottom{
+        flex-direction:column;
+        gap:40px;
+    }
+}
+
 
 /* floatingwhatsapp  */
 .floating-whatsapp {
@@ -1174,7 +1355,6 @@ header .nav-links li a:hover::after {
     z-index: 1000;          
     transition: all var(--transition-fast);
 }
-
 .floating-whatsapp:hover {
     transform: translateY(-3px);
     background-color: var(--color-gold);
@@ -1191,4 +1371,3 @@ header .nav-links li a:hover::after {
         right: 10px; 
     }
 }
-
