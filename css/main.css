@@ -125,15 +125,7 @@ body {
     color: var(--color-gold);
     position: relative;
 }
-/* .main-head .main-title span::after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    bottom: -8px;
-    left: 0;
-    background: var(--color-gold);
-} */
+
 .main-head .description{
     font-size: 1.1rem;
     margin-bottom: 70px;
@@ -145,6 +137,61 @@ body {
     }
     .main-head .description{
         font-size: 1rem;
+    }
+}
+/* PRELOADER */
+
+.preloader{
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(circle at 25% 50%, var(--color-gold-soft), #00000030 40%),
+        var(--color-bg-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: all .5s ease;
+    min-height: 100vh;
+}
+
+.glass-loader{
+    position: relative;
+    padding: 25px 60px;
+    border: 2px solid var(--shadow-gold);
+    border-radius: var(--radius-main);
+    overflow: hidden;
+    backdrop-filter: blur(var(--blur-main));
+}
+
+.loader-text{
+    font-size: 2rem;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: var(--color-gold);
+}
+
+.shine{
+    position: absolute;
+    top:0;
+    left:-100%;
+    width:100%;
+    height:100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(150, 137, 27, 0.7),
+        transparent
+    );
+    animation: glass-shine 1.5s infinite;
+}
+.hide-preloader{
+    opacity:0;
+    visibility:hidden;
+}
+
+@keyframes glass-shine{
+    100%{
+        left:100%;
     }
 }
 
@@ -285,8 +332,6 @@ header .nav-links li a:hover::after {
         pointer-events: none;
         transition: opacity var(--transition-main-duration) cubic-bezier(0.4, 0, 0.2, 1), 
             transform var(--transition-main-duration) cubic-bezier(0.4, 0, 0.2, 1);
-            /* background 0.3s ease, 
-            box-shadow 0.3s ease; */
         
         z-index: 10;
     }
@@ -296,12 +341,6 @@ header .nav-links li a:hover::after {
         transform: translateY(0);
         pointer-events: auto;
     }
-    /* header .nav-links:hover {
-        background: rgba(0, 0, 0, 0.25);
-        box-shadow: 
-        inset 6px 6px 12px rgba(0, 0, 0, 0.6), 
-        inset -1px -1px 5px rgba(255, 255, 255, 0.1);
-    }*/
     header .nav-links li {
         margin-bottom: 10px;
         width: 100%;
