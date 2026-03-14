@@ -333,7 +333,7 @@ header .nav-links li a:hover::after {
     }
 }
 .landing{
-    background-image: url(../resources/landing.png);
+    background-image: url(../resources/landing.webp);
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1403,4 +1403,16 @@ header .nav-links li a:hover::after {
         bottom: 10px;           
         right: 10px; 
     }
+}
+
+/* fadeup once */
+.reveal{
+    opacity:0;
+    transform:translateY(40px);
+    transition:all 0.8s ease;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
 }

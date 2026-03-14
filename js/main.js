@@ -172,7 +172,34 @@ function toggledCard(){
     });
 }
 
+function fadeUpOnce(){
+    const sections = document.querySelectorAll(".reveal");
+
+    const observer = new IntersectionObserver((entries, observer) => {
+
+        entries.forEach(entry => {
+
+            if(entry.isIntersecting){
+
+                entry.target.classList.add("active");
+
+                observer.unobserve(entry.target);
+            }
+
+        });
+
+    },
+        {
+            threshold:0.2
+        }
+    );
+
+    sections.forEach(section=>{
+        observer.observe(section);
+    });
+}
 document.addEventListener("DOMContentLoaded", () => {
+    fadeUpOnce()
     initNavbar();
     initServiceCards();
     init3DEffect();
