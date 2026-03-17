@@ -1,0 +1,195 @@
+{
+    "en": {
+        "meta": {
+        "title": "Glass Workshop in Jeddah | Talal Alnemary Glass & Mirror Services Saudi Arabia",
+        "description": "Professional glass workshop in Jeddah, Saudi Arabia. Talal Alnemary Glass Workshop provides glass installation, mirrors, glass repair, and custom glass solutions for homes and businesses."
+        },
+
+        "preloader": {
+        "name": "Talal Alnemary"
+        },
+
+        "navbar": {
+        "home": "Home",
+        "about": "About Us",
+        "services": "Services",
+        "gallery": "Gallery",
+        "contact": "Contact"
+        },
+
+        "landing": {
+        "title": "Talal Alnemary<br>Glass & Mirror <br><span>Workshop</span>",
+        "subtitle": "Professional glass cutting and maintenance services in Saudi Arabia since 1995.",
+        "description": "Experts in Furniture Glass <span>•</span> Building Glass <span>•</span> Mirrors <span>•</span> Security Glass",
+        "cta": "Discover More"
+        },
+
+        "about": {
+        "title": "About <span>Us</span>",
+        "subtitle": "Explore and see the quality of our work.",
+        "label": "Who We Are",
+        "heading": "Crafting Glass Excellence Since <span>1995</span>",
+        "paragraph1": "Talal Alnemary Glass Workshop has been providing professional glass solutions in Saudi Arabia since 1995.",
+        "paragraph2": "We specialize in glass cutting, mirrors, furniture glass, building glass, and security glass, delivering durable and elegant solutions for homes and commercial spaces. With decades of experience, our team is committed to precision, quality craftsmanship, and reliable service in every project we complete.",
+        "features": {
+            "quality": "<i class=\"fas fa-check-circle\"></i> Premium Quality Glass",
+            "craftsmanship": "<i class=\"fas fa-check-circle\"></i> Expert Craftsmanship",
+            "installation": "<i class=\"fas fa-check-circle\"></i> Professional Installation & Maintenance",
+            "types": "<i class=\"fas fa-check-circle\"></i> Work With All Glass Types"
+        },
+        "cta": "Explore Our Works",
+        "experience": "<span class='num'>30+</span><span class='text'>Years of<br>Excellence</span>"
+        },
+
+        "services": {
+        "title": "Our <span>Services</span>",
+        "description": "We provide professional glass and mirror solutions for homes, shops, and buildings in Saudi Arabia.",
+        "card1": {
+            "title": "Shower & Security Glass",
+            "desc": "Installation of modern shower glass and durable security glass for homes and commercial spaces."
+        },
+        "card2": {
+            "title": "Furniture Glass & Mirrors",
+            "desc": "Custom glass for tables, cabinets, and furniture along with professional mirror installation."
+        },
+        "card3": {
+            "title": "Building Glass & Cutting",
+            "desc": "Glass solutions for doors and windows with precise glass cutting and maintenance services."
+        },
+        "cta": "Contact Us"
+        },
+
+        "gallery": {
+        "title": "Our <span>Arts</span>",
+        "description": "Explore and see the quality of our work.",
+        "cta": {
+            "more" : "See More",
+            "less" : "See less"
+
+        }
+        },
+
+        "contact": {
+        "title": "Contact <span>Us</span>",
+        "description": "Get in touch with us for more information.",
+        "heading": "Get in touch",
+        "text": "Whether you have a question about our services, projects, or anything else, our team is ready to answer all your questions.",
+        "whatsapp": {
+            "label": "Whatsapp",
+            "value": "Chat with us"
+        },
+        "phone": {
+            "label": "Call us"
+        },
+        "locationBtn": "Our Location"
+        },
+
+        "footer": {
+        "about": "Crafting precision glass solutions in Saudi Arabia since 1995. Your trusted partner for all glass and mirror needs — homes, offices, and commercial spaces.",
+        "quickLinks": "Quick Links",
+        "contactInfo": "Contact Info",
+        "chat": "<i class=\"fab fa-whatsapp\"></i>Chat on WhatsApp",
+        "country": "<i class=\"fas fa-map-marker-alt\"></i>Saudi Arabia",
+        "hours": "<i class=\"fas fa-clock\"></i>Open Daily: 6:00 AM – 12:00 PM",
+        "copyright": "© 2026 <span>Talal Alnemary Glass Workshop</span>. All rights reserved.",
+        "madeBy": "Made by"
+        }
+    },
+
+    "ar": {
+        "meta": {
+        "title": "ورشة طلال النمري للزجاج | جدة المملكة العربية السعودية",
+        "description": "ورشة زجاج احترافية في جدة بالمملكة العربية السعودية. تقدم ورشة طلال النمري خدمات تركيب الزجاج والمرايا وتصليح الزجاج وحلول الزجاج المخصصة للمنازل والشركات و المكاتب."
+        },
+
+        "preloader": {
+        "name": "طلال النمري"
+        },
+
+        "navbar": {
+        "home": "الرئيسية",
+        "about": "من نحن",
+        "services": "الخدمات",
+        "gallery": "الأعمال",
+        "contact": "تواصل معنا"
+        },
+
+        "landing": {
+        "title": "<span>ورشة</span> طلال النمري<br>للزجاج والمرايا",
+        "subtitle": "خدمات احترافية في قص الزجاج وصيانته في المملكة العربية السعودية منذ عام 1995.",
+        "description": "متخصصون في زجاج الأثاث <span>•</span> زجاج المباني <span>•</span> المرايا <span>•</span> الزجاج الأمني",
+        "cta": "اكتشف المزيد"
+        },
+
+        "about": {
+        "title": "من <span>نحن</span>",
+        "subtitle": "استكشف وشاهد جودة أعمالنا.",
+        "label": "من نحن",
+        "heading": "نصنع التميز في الزجاج منذ عام <span>1995</span>",
+        "paragraph1": "تقدم ورشة طلال النمري للزجاج حلولاً احترافية للزجاج في المملكة العربية السعودية منذ عام 1995.",
+        "paragraph2": "نحن متخصصون في قص الزجاج والمرايا وزجاج الأثاث وزجاج المباني والزجاج الأمني، ونوفر حلولاً متينة وأنيقة للمنازل والمساحات التجارية. بخبرة تمتد لعقود، يلتزم فريقنا بالدقة وجودة الحرفية وتقديم خدمة موثوقة في كل مشروع نقوم به.",
+        "features": {
+            "quality": "<i class=\"fas fa-check-circle\"></i> زجاج عالي الجوده",
+            "craftsmanship": "<i class=\"fas fa-check-circle\"></i>خبرتا تضمن حرفيتنا",
+            "installation": "<i class=\"fas fa-check-circle\"></i> تقطيع و تركيب و اصلاح باحترافيه",
+            "types": "<i class=\"fas fa-check-circle\"></i> نعمل بجميع انواع الزجاج و المرايا"
+        },
+        "cta": "استكشف أعمالنا",
+        "experience": "<span class='num'>30+</span><span class='text'>سنة من<br>التميز</span>"
+        },
+
+        "services": {
+        "title": "خدمات<span>نا</span>",
+        "description": "نقدم حلولاً احترافية للزجاج والمرايا للمنازل والمحلات والمباني في المملكة العربية السعودية.",
+        "card1": {
+            "title": "زجاج الحمامات والزجاج الأمني",
+            "desc": "تركيب زجاج الحمامات الحديث والزجاج الأمني المتين للمنازل والمساحات التجارية."
+        },
+        "card2": {
+            "title": "زجاج الأثاث والمرايا",
+            "desc": "زجاج مخصص للطاولات والخزائن والأثاث مع تركيب احترافي للمرايا."
+        },
+        "card3": {
+            "title": "زجاج المباني وقص الزجاج",
+            "desc": "حلول زجاجية للأبواب والنوافذ مع خدمات قص الزجاج بدقة وصيانته."
+        },
+        "cta": "تواصل معنا"
+        },
+
+        "gallery": {
+        "title": "أعمال<span>نا</span>",
+        "description": "استكشف وشاهد جودة أعمالنا.",
+        "cta": 
+            {
+                "more" : "عرض المزيد",
+                "less" : "عرض أقل"
+            }
+        },
+
+        "contact": {
+        "title": "تواصل <span>معنا</span>",
+        "description": "تواصل معنا للحصول على المزيد من المعلومات.",
+        "heading": "تواصل معنا",
+        "text": "إذا كان لديك أي سؤال حول خدماتنا أو مشاريعنا أو أي شيء آخر، فإن فريقنا مستعد للإجابة على جميع استفساراتك.",
+        "whatsapp": {
+            "label": "واتساب",
+            "value": "راسلنا على واتس اب"
+        },
+        "phone": {
+            "label": "اتصل بنا"
+        },
+        "locationBtn": "موقعنا"
+        },
+
+        "footer": {
+        "about": "نقدم حلول زجاج دقيقة في المملكة العربية السعودية منذ عام 1995. شريكك الموثوق لجميع احتياجات الزجاج والمرايا للمنازل والمكاتب والمساحات التجارية.",
+        "quickLinks": "روابط سريعة",
+        "contactInfo": "معلومات التواصل",
+        "chat": "<i class=\"fab fa-whatsapp\"></i> تواصل عبر الواتس اب",
+        "country": "<i class=\"fas fa-map-marker-alt\"></i> المملكه العربيه السعوديه",
+        "hours": "<i class=\"fas fa-clock\"></i>مفتوح يوميا: 6:00 صباحا - 12:00مساء",
+        "copyright": "<span>Talal Alnemary Glass Workshop</span> جميع الحقوق محفوظه © 2026 ",
+        "madeBy": "تصميم وبرمجة"
+        }
+    }
+}

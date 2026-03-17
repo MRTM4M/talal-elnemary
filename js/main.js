@@ -1,4 +1,56 @@
 
+
+function toggleFetch() {
+    const btn = document.getElementById("langBtn");
+
+    btn.addEventListener("click", function(e) {
+        e.preventDefault();
+        preloaderShow();
+        const currentLang = document.documentElement.lang;
+        const newLang = currentLang === "ar" ? "en" : "ar";
+        setTimeout(() => {
+            fetch("translations.json")
+                .then(res => res.json())
+                .then(data => {
+                    setLang(newLang, data);
+                    btn.textContent = newLang === "ar" ? "EN" : "ع";
+                    preloaderHideAgain();
+                })
+                .catch(err => {
+                    console.error("Translation load failed:", err);
+                    preloaderHideAgain();
+                });
+        }, 1000);
+    });
+}
+
+function setLang(lang, translations) {
+    document.querySelectorAll("[data-i18n]").forEach(element => {
+        const key = element.dataset.i18n;
+        const text = key.split(".").reduce((obj, k) => obj?.[k], translations[lang]) || "";
+        element.innerHTML = text;
+    });
+    document.documentElement.lang = lang;
+    document.documentElement.dir = (lang === "ar") ? "rtl" : "ltr";
+}
+
+
+function preloaderShow(){
+    const preloader = document.querySelector(".preloader");
+    if(preloader){
+        preloader.classList.remove("hide-preloader");
+        setTimeout(() => { preloader.style.display = "flex"; }, 500);
+    }
+}
+
+function preloaderHideAgain() {
+    const preloader = document.querySelector(".preloader");
+    if(preloader){
+        preloader.classList.add("hide-preloader");
+        setTimeout(() => { preloader.style.display = "none"; }, 500);
+    }
+}
+
 function preloaderHide() {
     window.addEventListener("load", () => {
         const preloader = document.querySelector(".preloader");
@@ -235,6 +287,7 @@ function videoPlayOneScroll(){
 
 
 document.addEventListener("DOMContentLoaded", () => {
+    toggleFetch()
     preloaderHide()
     fadeUpOnce()
     videoPlayOneScroll()
