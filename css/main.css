@@ -1405,7 +1405,11 @@ header .nav-links li a:hover::after {
     align-items:center;
     gap:10px;
 }
-
+@media (max-width:768px){
+    .made-by{
+        flex-direction: column;
+    }
+}
 .made-links a{
     align-items:center;
     color:var(--color-text-muted);
