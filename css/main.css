@@ -565,7 +565,11 @@ header .nav-links li a:hover::after {
     transform: translateY(6px); 
     box-shadow: 0 0 0 var(--shadow-gold);
 }
-
+@media (max-width:324px){
+    .btn-more{
+        margin-top: 20px;
+    }
+}
 
 @keyframes fadeUp {
     from {
