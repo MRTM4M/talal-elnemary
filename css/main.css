@@ -1372,8 +1372,8 @@ header .nav-links li a:hover::after {
 .footer-bottom{
     border-top:1px solid rgba(255,255,255,0.08);
     margin-top:40px;
-    padding-top:20px;
-
+    padding:20px;
+    
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -1395,6 +1395,7 @@ header .nav-links li a:hover::after {
     gap:12px;
 }
 @media (max-width:768px){
+    .footer-bottom,
     .made-by{
         font-size: 0.8rem;
 
