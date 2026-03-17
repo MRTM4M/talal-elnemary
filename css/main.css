@@ -141,6 +141,7 @@ body {
     font-size: 1.1rem;
     margin-bottom: 70px;
     color: var(--color-text-muted);
+    padding: 0px 10px;
 }
 @media (max-width:768px){
     .main-head .main-title{
@@ -180,7 +181,14 @@ body {
     font-weight: 600;
     color: var(--color-gold);
 }
-
+@media (max-width:768px){
+    .loader-text{
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+        font-weight: 600;
+        color: var(--color-gold);
+    }
+}
 .shine{
     position: absolute;
     top:0;
@@ -269,6 +277,12 @@ header .logo div {
     text-shadow: 0 0 3px rgba(206, 172, 52, 0.685);
 }
 
+@media (max-width:768px){
+        header .logo div {
+        font-size: 1.3rem;
+    }
+}
+
 .right-side{
     display: flex;
     justify-content: center;
@@ -276,7 +290,6 @@ header .logo div {
     gap: 15px;
 }
 .lang-btn {
-    /* background: transparent; */
     color: var(--color-gold);
     border: 1px solid rgba(255, 255, 255, 0.1); 
     font-weight: 600;
@@ -292,11 +305,12 @@ header .logo div {
 
 .lang-btn:hover {
     color: var(--color-text-muted);
-
+    border-color: var(--color-gold);
 }
 
 .lang-btn:active {
     color: var(--color-text-muted);
+    border-color: var(--color-gold);
 }
 header .nav-links {
 
@@ -590,11 +604,11 @@ header .nav-links li a:hover::after {
     }
 
     .landing .sub-title {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .landing .description {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .landing .cta-btn {

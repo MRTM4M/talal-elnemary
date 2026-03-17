@@ -199,7 +199,12 @@ function galleryAppear(){
                     }, index * 80);
                 });
 
-                btn.textContent = "See Less";
+                if (document.documentElement.lang == "en"){
+                    btn.textContent = "See less";
+                }
+                else{
+                    btn.textContent = "عرض أقل";
+                }
 
             } else {
 
@@ -214,7 +219,12 @@ function galleryAppear(){
                     }, index * 60);
                 });
 
-                btn.textContent = "See More";
+                if (document.documentElement.lang == "en"){
+                    btn.textContent = "See More";
+                }
+                else{
+                    btn.textContent = "عرض المزيد";
+                }
             }
         });
     }
