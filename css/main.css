@@ -72,10 +72,19 @@ html[dir="rtl"] {
 body {
     min-height: 100vh;
     background: var(--color-bg-main);
+}
+html[lang="ar"] body {
+    font-family: 'Cairo', sans-serif;
+}
+
+html[lang="en"] body {
     font-family: 'Inter', sans-serif;
 }
-.head-font{
+html[lang="en"] .head-font{
     font-family: "Poppins", sans-serif;
+}
+html[lang="ar"] .head-font{
+    font-family: 'Tajawal', 'Cairo', sans-serif
 }
 .container{
     padding: 0px 15px;
