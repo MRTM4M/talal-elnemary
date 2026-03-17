@@ -156,7 +156,7 @@
     },
 
     "gallery": {
-        "title": "معرض <span>أعمالنا</span>",
+        "title": "معرض<span>نا/span>",
         "description": "استكشف وشاهد جودة أعمالنا.",
         "cta": {
         "more": "عرض المزيد",
